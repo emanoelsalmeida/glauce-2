@@ -1,0 +1,46 @@
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    justify-content: center;
+}
+form .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    justify-content:  center;
+    width: 100%;  
+    display: block;
+    margin: 0 auto;
+}
+.input-fields input, .msg textarea{
+    margin: 10px 0;
+    background:transparent;
+    border: .001em solid #fff;
+    border-radius: .4em;
+    padding:1em;
+    color: #fff;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+.msg textarea{
+    height: 80px;
+    width: 100%;
+}
+.input-fields button{
+    background-color: white;
+    color: #000;
+    text-align: center;
+    padding:1em;
+    cursor: pointer;
+    border: none;
+   display: block;
+   width: 100%;
+    border: .001em solid #fff;
+    border-radius: .1em;
+    color: #eb0808;
+    font-size: .6em;
+}
+::placeholder{color: #fff;font-weight: 600;}
