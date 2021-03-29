@@ -8,29 +8,35 @@ form{
 form .input-fields{
     display: flex;
     flex-direction: column;
-    margin-right: 4%;
     justify-content:  center;
     width: 100%;  
     display: block;
     margin: 0 auto;
 }
-.input-fields input, .msg textarea{
+.input-fields input, .msg textarea
+{
     margin: 10px 0;
-    background:transparent;
-    border: .001em solid #fff;
+    background:#f2b9a2;
+    border: .2em solid #d97778;
     border-radius: .4em;
     padding:1em;
-    color: #fff;
+    color: #000;
     width:100%;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
-.msg textarea{
-    height: 80px;
+
+.input-fields input::after
+{content: "";position: absolute;top: 10px;left: 220px;background: #000;height: 20ch;width: 3ch;}
+
+.msg textarea
+{
+    height: 20ch;
     width: 100%;
 }
 .input-fields button{
-    background-color: white;
+    background-color:#f2b9a2 ;
     color: #000;
     text-align: center;
     padding:1em;
@@ -38,9 +44,9 @@ form .input-fields{
     border: none;
    display: block;
    width: 100%;
-    border: .001em solid #fff;
+   border: .2em solid #d97778;
     border-radius: .1em;
-    color: #eb0808;
+    color: #000;
     font-size: .6em;
 }
-::placeholder{color: #fff;font-weight: 600;}
+::placeholder{color: #000;font-weight: 400;}
